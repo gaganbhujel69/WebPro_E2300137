@@ -1,0 +1,498 @@
+/* ============================================================
+   EduSkill Marketplace System (EMS) — Global Stylesheet
+   assets/css/style.css
+   ============================================================ */
+
+/* ── Google Font ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── CSS Custom Properties ───────────────────────────────── */
+:root {
+    --ems-primary: #2563eb;
+    --ems-primary-dark: #1d4ed8;
+    --ems-secondary: #0f172a;
+    --ems-accent: #f59e0b;
+    --ems-success: #16a34a;
+    --ems-danger: #dc2626;
+    --ems-light-bg: #f1f5f9;
+    --ems-card-bg: #ffffff;
+    --ems-border: #e2e8f0;
+    --ems-text: #1e293b;
+    --ems-text-muted: #64748b;
+    --ems-navbar-h: 64px;
+    --ems-radius: 0.75rem;
+    --ems-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    --ems-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+    --transition: 0.2s ease;
+}
+
+/* ── Base Reset ──────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--ems-text);
+    background-color: var(--ems-light-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--ems-primary);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--ems-primary-dark);
+}
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.ems-navbar {
+    background: linear-gradient(135deg, var(--ems-secondary) 0%, #1e3a5f 100%);
+    min-height: var(--ems-navbar-h);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.ems-navbar .navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: -0.3px;
+}
+
+.ems-navbar .nav-link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color var(--transition);
+}
+
+.ems-navbar .nav-link:hover {
+    color: var(--ems-accent) !important;
+}
+
+/* ── Main Content Area ───────────────────────────────────── */
+.ems-main {
+    flex: 1;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.ems-footer {
+    background: var(--ems-secondary);
+    color: var(--ems-text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Cards ───────────────────────────────────────────────── */
+.ems-card {
+    background: var(--ems-card-bg);
+    border: 1px solid var(--ems-border);
+    border-radius: var(--ems-radius);
+    box-shadow: var(--ems-shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.ems-card:hover {
+    box-shadow: var(--ems-shadow);
+    transform: translateY(-2px);
+}
+
+/* ── Stat / KPI Cards ────────────────────────────────────── */
+.stat-card {
+    background: var(--ems-card-bg);
+    border-radius: var(--ems-radius);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: var(--ems-shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.stat-card:hover {
+    box-shadow: var(--ems-shadow);
+    transform: translateY(-2px);
+}
+
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.stat-icon.blue {
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--ems-primary);
+}
+
+.stat-icon.green {
+    background: rgba(22, 163, 74, 0.12);
+    color: var(--ems-success);
+}
+
+.stat-icon.amber {
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--ems-accent);
+}
+
+.stat-icon.red {
+    background: rgba(220, 38, 38, 0.12);
+    color: var(--ems-danger);
+}
+
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.8125rem;
+    color: var(--ems-text-muted);
+    margin-top: 0.25rem;
+}
+
+/* ── Page Header ─────────────────────────────────────────── */
+.page-header {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--ems-border);
+}
+
+.page-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-header .breadcrumb {
+    margin: 0;
+    font-size: 0.8125rem;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all var(--transition);
+}
+
+.btn-primary {
+    background: var(--ems-primary);
+    border-color: var(--ems-primary);
+}
+
+.btn-primary:hover {
+    background: var(--ems-primary-dark);
+    border-color: var(--ems-primary-dark);
+}
+
+/* ── Forms ───────────────────────────────────────────────── */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    border-color: var(--ems-border);
+    font-size: 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--ems-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.375rem;
+}
+
+/* ── Tables ──────────────────────────────────────────────── */
+.table {
+    font-size: 0.875rem;
+}
+
+.table thead th {
+    background: var(--ems-light-bg);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ems-text-muted);
+    border-top: none;
+}
+
+/* ── Status Badges ───────────────────────────────────────── */
+.badge-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.badge-paid {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.badge-enrolled {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+.badge-completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* ── Auth Pages (login / register) ──────────────────────── */
+.auth-wrapper {
+    min-height: calc(100vh - var(--ems-navbar-h));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+    padding: 2rem 1rem;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: var(--ems-radius);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 480px;
+}
+
+.auth-logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--ems-primary);
+    letter-spacing: -0.5px;
+}
+
+/* ── Alerts / Notices ────────────────────────────────────── */
+.alert {
+    border-radius: var(--ems-radius);
+    border: none;
+    font-size: 0.875rem;
+}
+
+/* ── Course Cards ────────────────────────────────────────── */
+.course-card {
+    background: #fff;
+    border: 1px solid var(--ems-border);
+    border-radius: var(--ems-radius);
+    overflow: hidden;
+    transition: box-shadow var(--transition), transform var(--transition);
+    height: 100%;
+}
+
+.course-card:hover {
+    box-shadow: var(--ems-shadow);
+    transform: translateY(-3px);
+}
+
+.course-card-header {
+    background: linear-gradient(135deg, var(--ems-primary), #1d4ed8);
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+}
+
+.course-card-body {
+    padding: 1.25rem 1.5rem;
+}
+
+/* ── Star Rating Input ───────────────────────────────────── */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.25rem;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.75rem;
+    color: #d1d5db;
+    cursor: pointer;
+    transition: color var(--transition);
+}
+
+.star-rating input:checked~label,
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: var(--ems-accent);
+}
+
+/* ── Receipt Preview ─────────────────────────────────────── */
+.receipt-box {
+    border: 2px dashed var(--ems-border);
+    border-radius: var(--ems-radius);
+    padding: 2rem;
+    background: #fafafa;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* ── Utilities ───────────────────────────────────────────── */
+.text-ems-primary {
+    color: var(--ems-primary) !important;
+}
+
+.bg-ems-primary {
+    background-color: var(--ems-primary) !important;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.rounded-ems {
+    border-radius: var(--ems-radius) !important;
+}
+
+/* ── Responsive Tweaks (Bootstrap 'lg' is 992px) ─────────── */
+@media (max-width: 991.98px) {
+    .stat-value {
+        font-size: 1.4rem;
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.25rem;
+    }
+
+    /* FINAL ROBUST MOBILE NAVBAR */
+    .ems-navbar {
+        height: auto !important;
+        min-height: var(--ems-navbar-h) !important;
+        background: #0f172a !important;
+        display: block !important;
+        position: relative !important;
+        z-index: 10000 !important;
+        padding: 0 !important;
+    }
+
+    .ems-navbar .container-fluid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 0.75rem 1rem !important;
+        background: #0f172a !important;
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        flex-basis: 100% !important;
+        display: none;
+        background: #0f172a !important;
+        margin: 0 !important;
+        padding: 0 1rem 1.5rem 1rem !important;
+        position: relative !important;
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        margin-top: 1rem !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 1rem 0 !important;
+        color: #ffffff !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        font-weight: 600 !important;
+    }
+
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: none !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .navbar-nav .dropdown-item {
+        color: #ffffff !important;
+        padding: 0.75rem 1.25rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ems-main {
+        padding-top: 1rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+
+    .ems-card {
+        padding: 1.25rem !important;
+    }
+
+    .page-header {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .display-5 {
+        font-size: 2.25rem;
+    }
+
+    .course-card-header,
+    .course-card-body {
+        padding: 1rem;
+    }
+}

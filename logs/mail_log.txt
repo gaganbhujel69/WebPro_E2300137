@@ -1,0 +1,57 @@
+[2026-03-23 14:36:45] TO: notify@example.com
+SUBJECT: Update on your Training Provider Registration
+MESSAGE:
+Dear Notify Test,
+
+Thank you for your interest in EduSkill Marketplace System (EMS).
+
+Unfortunately, your registration has been rejected for the following reason:
+Verification testing
+
+If you have any questions, please contact our support team.
+
+Best regards,
+EMS Team
+------------------------------------------------------------
+[2026-03-23 15:24:32] TO: tikaram@gmail.com
+SUBJECT: Your Training Provider Account has been Approved!
+MESSAGE:
+Dear tikaram,
+
+We are pleased to inform you that your training provider registration for EduSkill Marketplace System (EMS) has been approved.
+
+You can now log in and start managing your courses.
+
+Best regards,
+EMS Team
+------------------------------------------------------------
+[2026-03-24 05:38:26] TO: binay@gmail.com
+SUBJECT: Update on your Training Provider Registration
+MESSAGE:
+Dear Binay sigdel,
+
+Thank you for your interest in EduSkill Marketplace System (EMS).
+
+Unfortunately, your registration has been rejected for the following reason:
+invalide doc
+
+If you have any questions, please contact our support team.
+
+Best regards,
+EMS Team
+------------------------------------------------------------
+[2026-03-24 05:41:36] TO: notify_last@example.com
+SUBJECT: Update on your Training Provider Registration
+MESSAGE:
+Dear Notify Test,
+
+Thank you for your interest in EduSkill Marketplace System (EMS).
+
+Unfortunately, your registration has been rejected for the following reason:
+invalid doc
+
+If you have any questions, please contact our support team.
+
+Best regards,
+EMS Team
+------------------------------------------------------------
