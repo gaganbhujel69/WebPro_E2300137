@@ -11,3 +11,6 @@ A centralized web-based platform connecting learners with accredited training pr
 * **Learners:** Can browse, enrol, and review courses.
 * **Training Providers:** Can manage courses and track enrolments.
 * **Ministry Officers:** Can approve/reject providers and view system analytics.
+
+## Contributors
+* [Gagan Bhujel](https://github.com/gaganbhujel69) - Provider Onboarding & Backend
