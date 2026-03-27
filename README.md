@@ -1,0 +1,13 @@
+# EduSkill Marketplace System (EMS)
+
+A centralized web-based platform connecting learners with accredited training providers. 
+
+## Core Technologies
+* HTML5, CSS3, Bootstrap 5
+* JavaScript
+* PHP & MySQL
+
+## Project Roles
+* **Learners:** Can browse, enrol, and review courses.
+* **Training Providers:** Can manage courses and track enrolments.
+* **Ministry Officers:** Can approve/reject providers and view system analytics.
