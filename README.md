@@ -14,3 +14,4 @@ A centralized web-based platform connecting learners with accredited training pr
 
 ## Contributors
 * [Gagan Bhujel](https://github.com/gaganbhujel69) - Provider Onboarding & Backend
+* [Semon Chakradhar](https://github.com/SemonChakhradhar) - Course Management & Analytics
